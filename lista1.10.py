@@ -1,11 +1,3 @@
-def maximo(lista):
-    maior = lista[0]
-    for numero in lista:
-        if numero > maior:
-            maior = numero
-    return maior
-
-
 def main():
     # Leitura:
     for serie in range(4):
@@ -15,7 +7,7 @@ def main():
                 f"Digite o {leitura + 1}º número da {serie + 1}ª série: "))
             numeros.append(numero)
         # Processamento:
-        meu_maior = maximo(numeros)
+        meu_maior = max(numeros)
         # Saída:
         print(
             f"O maior número da {serie + 1}ª série é {meu_maior}\n")
